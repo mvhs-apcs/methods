@@ -1,41 +1,59 @@
 require 'minitest/autorun'
-require "minitest/reporters"
-Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
+require './methods'
 
-require_relative 'methods'
 
-class MethodsTest < MiniTest::Test
-	def setup
-		@m = Class.new do
-     include Methods
-   	end.new
-	end
+describe 'Methods' do
 
-  def test_sleep_in
-    assert_equal true, @m.sleep_in?(false, false)
-    assert_equal false, @m.sleep_in?(true, false)
-    assert_equal true, @m.sleep_in?(false, true)
-    assert_equal true, @m.sleep_in?(true, true)
+  describe 'sleep_in' do
+
+    it 'should sleep in on the weekend at home' do
+      sleep_in?(false, false).must_equal(true)
+    end
+
+    it 'should not sleep in during the week at home' do
+      sleep_in?(true, false).must_equal(false)
+    end
+
+    it 'should sleep in on vacation on the weekend' do
+      sleep_in?(false, true).must_equal(true)
+    end
+
+    it 'should sleep on vacation during the week' do
+      sleep_in?(true, true).must_equal(true)
+    end
+
+  end
+  
+  describe 'monkey_trouble' do
+
+    it 'is trouble when both monkeys are smiling' do
+      monkey_trouble?(false, false).must_equal(true)
+    end
+
+    it 'is not trouble when only A is smiling' do
+      monkey_trouble?(true, false).must_equal(false)
+    end
+
+    it 'is not trouble when only B is smiling' do
+      monkey_trouble?(false, true).must_equal(false)
+    end
+
+    it 'is trouble when neither monkey is smiling' do
+      monkey_trouble?(false, false).must_equal(true)
+    end
+
   end
 
-  def test_monkey_trouble
-    assert_equal true, @m.monkey_trouble?(false, false)
-    assert_equal false, @m.monkey_trouble?(true, false)
-    assert_equal false, @m.monkey_trouble?(false, true)
-    assert_equal true, @m.monkey_trouble?(true, true)
-  end
+  describe 'sum_double' do
+    
+    it 'finds the sum' do
+      sum_double(1, 2).must_equal(3)
+    end
 
-  def test_sum_double 	
-  	assert_equal 3, @m.sum_double(1, 2)
-  	assert_equal 5, @m.sum_double(3, 2)
-  	assert_equal -1, @m.sum_double(-1, 0)
-  	assert_equal 1, @m.sum_double(0, 1)
-  	assert_equal 7, @m.sum_double(3, 4)
-  	
-  	assert_equal 4, @m.sum_double(1, 1)
-  	assert_equal 8, @m.sum_double(2, 2)
-  	assert_equal 12, @m.sum_double(3, 3)
-  	assert_equal -16, @m.sum_double(-4, -4)
+    it 'doubles the sum when the numbers are the same' do
+      sum_double(3, 3).must_equal(12)
+    end
+
   end
 
 end

@@ -47,3 +47,59 @@
 # 	* b - an integer
 #
 # TODO - write sum_double
+
+
+
+
+# *****************************************************
+#
+# 	Testing
+#
+# 		Write the three methods below, but this time the
+# 		tests are not given to you, so write those first.
+#
+# *****************************************************
+
+
+# blackjack
+#
+# Given 2 int values greater than 0, return whichever value is nearest to 21 
+# without going over. Return 0 if they both go over.
+#
+# > Parameters 
+# ------------
+# 	* a - an integer
+# 	* b - an integer
+#
+# TODO - write blackjack (tests first)
+
+
+# n_twice
+#
+# Given a string and an int n, return a string made of the first and last n 
+# chars from the string.
+#
+# Hint | Use string.slice
+# 		 | http://ruby-doc.org/core-2.2.0/String.html#method-i-slice
+#
+# > Parameters 
+# ------------
+# 	* str - a string with length at least n
+# 	* n   - an integer
+#
+# TODO - write n_twice (tests first)
+
+
+# close_far
+#
+# Given three ints, a b c, return true if one of b or c is "close" (differing 
+# from a by at most 1), while the other is "far", differing from both other 
+# values by 2 or more. Note: n.abs computes the absolute value of number n.
+#
+# > Parameters 
+# ------------
+# 	* a - an integer
+# 	* b - an integer
+# 	* c - an integer
+#
+# TODO - write close_far (tests first)

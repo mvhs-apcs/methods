@@ -1,8 +1,17 @@
 # Methods
 
-## First Time Setup
+## First Time Computer Setup
 
-Install the testing packages using `bundler`
+Install a package named `bundler` using the ruby program `gem`.
+
+```
+    $ gem install bundler
+```
+
+
+## First Time Project Setup
+
+In your project folder, install the testing packages using `bundler`.
 
 ```
     $ bundle

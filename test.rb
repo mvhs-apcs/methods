@@ -1,6 +1,5 @@
-require 'minitest/autorun'
+require './test_setup'
 require './methods'
-
 
 describe 'Methods' do
 

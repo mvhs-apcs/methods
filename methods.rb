@@ -1,10 +1,10 @@
 # *****************************************************
 #
-# 	Methods
+#   Methods
 #
-# 		Write the three methods below. Use the tests in
-# 		`methods_test.rb` to verify that they work
-# 		correctly. DO NOT print any info to the console.
+#     Write the three methods below. Use the tests in
+#     `test.rb` to verify that they work
+#     correctly. DO NOT print any info to the console.
 #
 # *****************************************************
 
@@ -15,8 +15,8 @@
 #
 # > Parameters
 # ------------ 
-# 	* weekday  - true only if it is a weekday
-# 	* vacation - true only if the student is on vacation
+#   * weekday  - true only if it is a weekday
+#   * vacation - true only if the student is on vacation
 #
 # TODO - write sleep_in?
 
@@ -30,8 +30,8 @@
 #
 # > Parameters 
 # ------------
-# 	* a_smiling   - true only if monkey a is smiling
-# 	* b_smiling   - true only if monkey b is smiling
+#   * a_smiling   - true only if monkey a is smiling
+#   * b_smiling   - true only if monkey b is smiling
 #
 # TODO - write monkey_trouble?
 
@@ -43,8 +43,8 @@
 #
 # > Parameters 
 # ------------
-# 	* a - an integer
-# 	* b - an integer
+#   * a - an integer
+#   * b - an integer
 #
 # TODO - write sum_double
 
@@ -53,10 +53,10 @@
 
 # *****************************************************
 #
-# 	Testing
+#   Testing
 #
-# 		Write the three methods below, but this time the
-# 		tests are not given to you, so write those first.
+#     Write the three methods below, but this time the
+#     tests are not given to you, so write those first.
 #
 # *****************************************************
 
@@ -68,8 +68,8 @@
 #
 # > Parameters 
 # ------------
-# 	* a - an integer
-# 	* b - an integer
+#   * a - an integer
+#   * b - an integer
 #
 # TODO - write blackjack (tests first)
 
@@ -80,12 +80,12 @@
 # chars from the string.
 #
 # Hint | Use string.slice
-# 		 | http://ruby-doc.org/core-2.2.0/String.html#method-i-slice
+#      | http://ruby-doc.org/core-2.2.0/String.html#method-i-slice
 #
 # > Parameters 
 # ------------
-# 	* str - a string with length at least n
-# 	* n   - an integer
+#   * str - a string with length at least n
+#   * n   - an integer
 #
 # TODO - write n_twice (tests first)
 
@@ -98,8 +98,8 @@
 #
 # > Parameters 
 # ------------
-# 	* a - an integer
-# 	* b - an integer
-# 	* c - an integer
+#   * a - an integer
+#   * b - an integer
+#   * c - an integer
 #
 # TODO - write close_far (tests first)

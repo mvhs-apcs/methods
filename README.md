@@ -8,6 +8,13 @@ Install a package named `bundler` using the ruby program `gem`.
     $ gem install bundler
 ```
 
+If you get a `connection refused` error (likely because of the school filter),
+run this command instead.
+
+```
+    $ gem install bundler --source http://rubygems.org
+```
+
 
 ## First Time Project Setup
 
